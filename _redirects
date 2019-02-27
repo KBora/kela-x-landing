@@ -1,0 +1,5 @@
+# Redirect domain aliases to primary domain
+https://kelax.com.au/* https://kelaxbyharrygeorje.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://peaceful-goldberg-8600c2.netlify.com/* https://kelaxbyharrygeorje.com/:splat 301!
