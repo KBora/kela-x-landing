@@ -402,8 +402,23 @@ template {
                 color: #CFAE71;
             }
 
-        
+            .no-wrap {
+                white-space: nowrap;
+            }
 
+            a {
+                color: #001F3A;
+            }
+
+            .mobile-wrap {
+                display: none;
+            }
+        
+            @media (max-width: 550px) {
+                .mobile-wrap {
+                    display: block;
+                }
+            }
 
             @media (min-width: 768px) {
                 .image-logo {
@@ -416,6 +431,7 @@ template {
                 .intro-text {
                     max-width: 400px;
                 }
+                
             }
 
 
@@ -430,9 +446,9 @@ template {
         
         <div class="intro-text-container">
             <div class="intro-text">          
-                <span class="text-highlight">Introducing KELA X</span>, a world-first luxury brand in a category of its own - 
-                fine jewellery for hair. <span class="text-highlight">KELA X</span> is a partnership between internationally 
-                acclaimed jewellery designer Harry Georje and KELA, the ‘hottest jewellery brand in the world’<sup>1</sup> and the company behind the world’s first non-slip hair accessory.            
+                Introducing <span class="text-highlight">KELA X by Harry Georje</span> a world-first luxury brand in a category of its own - 
+                fine jewellery for hair. <span class="text-highlight"><span class="no-wrap">KELA X</span> by Harry Georje</span> is a partnership between internationally 
+                acclaimed master jeweller Harry Georje and KELA, the company behind the world’s first non-slip hair accessory.            
             </div>
         </div>
 
@@ -442,7 +458,7 @@ template {
 
         <div class="download-text-container">
             <div class="download-text">
-                <a href="KelaX_Information_Memorandum.pdf" class="download-button">Download Information Memorandum (1.6MB pdf)</a>
+                <a href="KelaX_Information_Memorandum.pdf" class="download-button">Download <br class="mobile-wrap">> Information Memorandum</a>
                 <p>
                     All inquiries to <a href="mailto:info@kelax.com.au">info@kelax.com.au</a>
                 </p>
